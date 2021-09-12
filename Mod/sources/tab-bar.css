@@ -30,8 +30,12 @@
     padding-left: 5px !important;
 }
 
+.tab {
+    transition: background-color 0.2s;
+}
+
 .tab:not(.active):hover {
-    background-color: var(--colorHighlightBgAlpha) !important;
+    background-color: var(--colorHighlightBgAlphaUnfaded) !important;
 }
 
 .tab .close {
@@ -217,7 +221,7 @@
 }
 
 .tab-group.active+.tab-group-indicator {
-    background-color: var(--colorAccentBg) !important;
+    background-color: var(--colorAccentBgDark) !important;
 }
 
 .tab-group+.tab-group-indicator .tab-indicator+.tab-indicator {
@@ -233,11 +237,11 @@
 }
 
 .tab-group:not(.active)+.tab-group-indicator .tab-indicator.active:not(.marked):hover {
-    background-color: var(--colorHighlightBgAlpha) !important;
+    background-color: var(--colorHighlightBgAlphaUnfaded) !important;
 }
 
 .tab-group+.tab-group-indicator .tab-indicator:not(.active):not(.marked):hover {
-    background-color: var(--colorHighlightBgAlpha) !important;
+    background-color: var(--colorHighlightBgAlphaUnfaded) !important;
 }
 
 .tab-group-indicator .tab-indicator.marked {
@@ -308,8 +312,12 @@
     display: none !important;
 }
 
+#browser .tab-position .tab.active {
+    background-color: var(--colorAccentBgDark);
+}
+
 .tab-position .tab.active .progress-indicator {
-    background-color: var(--colorAccentBg);
+    background-color: var(--colorAccentBgDark);
     height          : 1px;
 }
 
@@ -327,7 +335,7 @@
 }
 
 .theme-dark .tab-position .tab .tab-header .favicon img[srcset^="ht"] {
-    filter: drop-shadow(0px 0px 1px var(--colorAccentBg)) !important;
+    filter: drop-shadow(0px 0px 1px var(--colorAccentBgDark)) !important;
 }
 
 .tab-position .tab:not(.active) {
@@ -360,7 +368,7 @@ div#tabs-container {
 #vivaldi-tooltip .tooltip .tooltip-item,
 #vivaldi-tooltip .tooltip .tooltip-item .thumbnail-image,
 #vivaldi-tooltip .tooltip-item .thumbnail-caption {
-    background-color: var(--colorAccentBg) !important;
+    background-color: var(--colorAccentBgDark) !important;
     color           : var(--colorAccentFg) !important;
 }
 
@@ -373,7 +381,7 @@ div#tabs-container {
 }
 
 .active.tooltip-item.active {
-    border-bottom: 1px solid var(--colorAccentBg);
+    border-bottom: 1px solid var(--colorAccentBgDark);
 }
 
 #vivaldi-tooltip .tooltip .tab-group .tooltip-item.active .thumbnail-text {
@@ -468,7 +476,7 @@ div#tabs-container {
 }
 
 .tab.active:not(.tab-group) .tab-audio {
-    background-color: var(--colorAccentBg) !important;
+    background-color: var(--colorAccentBgDark) !important;
 }
 
 .tab:not(.tab-group).active .tab-audio {
@@ -539,7 +547,7 @@ svg.svg-tab-stack {
 }
 
 .tab.active .stack-counter {
-    background-color: var(--colorAccentBg) !important;
+    background-color: var(--colorAccentBgDark) !important;
     color           : var(--colorAccentFg) !important;
 }
 

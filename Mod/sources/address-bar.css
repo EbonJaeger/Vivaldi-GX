@@ -45,13 +45,18 @@ div.UrlBar.toolbar.toolbar-mainbar.toolbar-large {
   color: var(--colorFgIntense);
 }
 
+.color-behind-tabs-off .toolbar-mainbar {
+  background-color: var(--colorAccentBgDark) !important;
+}
+
 .UrlBar-AddressField,
 .UrlBar-AddressField form input.url,
 .UrlBar-SearchField,
 .toolbar-mainbar .SearchField-Popup .SearchField {
-  background-color: var(--colorAccentBg) !important;
+  background-color: var(--colorAccentBgDark) !important;
   border          : none !important;
   height          : 27px !important;
+  transition      : background-color 0.2s;
 }
 
 .UrlField {
@@ -61,7 +66,7 @@ div.UrlBar.toolbar.toolbar-mainbar.toolbar-large {
 .UrlBar-AddressField:hover,
 .UrlBar-SearchField:hover,
 .toolbar-mainbar .SearchField-Popup .SearchField:hover {
-  background-color: var(--colorHighlightBgAlpha) !important;
+  background-color: var(--colorHighlightBgAlphaUnfaded) !important;
   border          : none !important;
   box-shadow      : none;
 }
